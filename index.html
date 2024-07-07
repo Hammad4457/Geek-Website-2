@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document2</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="https://geeks-react.netlify.app/static/media/logo.e22c846d87ff5a1252df471397badc6d.svg" alt="Logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Browse</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Web Development</a></li>
+              <li><a class="dropdown-item" href="#">Mobile App</a></li>
+              <li><a class="dropdown-item" href="#">IT Software</a></li>
+              <li><a class="dropdown-item" href="#">Marketing</a></li>
+              <li><a class="dropdown-item" href="#">Music</a></li>
+              <li><a class="dropdown-item" href="#">Lifestyle</a></li>
+              <li><a class="dropdown-item" href="#">Business</a></li>
+              <li><a class="dropdown-item" href="#">Photography</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Landings</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Landings</a></li>
+              <li><a class="dropdown-item" href="#">Education</a></li>
+              <li><a class="dropdown-item" href="#">Home Academy</a></li>
+              <li><a class="dropdown-item" href="#">Courses</a></li>
+              <li><a class="dropdown-item" href="#">Lead Course</a></li>
+              <li><a class="dropdown-item" href="#">Request Access</a></li>
+              <li><a class="dropdown-item" href="#">SaaS</a></li>
+              <li><a class="dropdown-item" href="#">Job Listings</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Pages</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Courses</a></li>
+              <li><a class="dropdown-item" href="#">Path</a></li>
+              <li><a class="dropdown-item" href="#">Blogs</a></li>
+              <li><a class="dropdown-item" href="#">Career</a></li>
+              <li><a class="dropdown-item" href="#">Portfolio <span class="badge bg-primary">New</span></a></li>
+              <li><a class="dropdown-item" href="#">Job</a></li>
+              <li><a class="dropdown-item" href="#">Speciality</a></li>
+              <hr />
+              <li><a class="dropdown-item" href="#">About</a></li>
+              <li><a class="dropdown-item" href="#">Help Center</a></li>
+              <li><a class="dropdown-item" href="#">Pricing</a></li>
+              <li><a class="dropdown-item" href="#">Compare Plan</a></li>
+              <li><a class="dropdown-item" href="#">Contact</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Accounts</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Accounts</a></li>
+              <li><a class="dropdown-item" href="#">Instructor</a></li>
+              <li><a class="dropdown-item" href="#">Students</a></li>
+              <li><a class="dropdown-item" href="#">Admin</a></li>
+              <hr />
+              <li><a class="dropdown-item" href="#">Sign In</a></li>
+              <li><a class="dropdown-item" href="#">Sign Up</a></li>
+              <li><a class="dropdown-item" href="#">Forgot Password</a></li>
+              <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+              <li><a class="dropdown-item" href="#">Security</a></li>
+              <li><a class="dropdown-item" href="#">Social Profiles</a></li>
+              <li><a class="dropdown-item" href="#">Notifications</a></li>
+              <li><a class="dropdown-item" href="#">Privacy Settings</a></li>
+              <li><a class="dropdown-item" href="#">Delete Profile</a></li>
+              <li><a class="dropdown-item" href="#">Linked Accounts</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown" href="#" href="#"><svg
+                xmlns="http://www.w3.org/2000/svg" style=" margin-left: 8px; " width="16" height="16"
+                fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                <path
+                  d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+              </svg>
+              <ul class="dropdown-menu ">
+                <li><a class="dropdown-item">Courses</a></li>
+                <li><a class="dropdown-item">Path</a></li>
+              </ul>
+          </li>
+          </a></li>
+
+        </ul>
+        <form>
+          <input type="search" placeholder="Search Courses">
+        </form>
+        <div class="navbar-left d-flex align-items-center ms-3">
+          <div style="border-radius: 50%; padding: 8px;">
+            <i class="fa-solid fa-sun"></i>
+          </div>
+          <button type="button" class="icon-button btn" style="background-color: rgb(237, 233, 233);">
+            <i class="fa-regular fa-bell"></i>
+          </button>
+          <img style="width: 5%;" src="Avatar.jpg" class="rounded-circle" alt="User Avatar">
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="img-container row" style="background-color: #754FFE;width: 100%; height: 340px;">
+    <div class="col-md-8">
+      <h1 style="padding-top: 4%; padding-left: 11%; color: white;">Getting Started with JavaScript</h1>
+      <p style="padding-left: 11%; font-size: x-large; color: white;">JavaScript is the popular programming
+        language which powers web pages and applications.This course will get you started coding in JavaScript
+      </p>
+      <div class="d-flex">
+        <i style="padding-left: 11%; color: white; margin-top: 5%;" class="fa-regular fa-bookmark"></i>
+        <dd style="padding-top: 4.4%; padding-left: 1%; color: white;">Bookmark</dd>
+        <div style="padding-top: 4.4%;padding-left: 3%;">
+          <svg style=" width: 10px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="#BAA7FF"
+              d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
+          </svg>
+        </div>
+        <dd style="padding-top: 4.4%; padding-left: 1%; color: white;">1200 Enrolled</dd>
+        <div style="padding-left: 3%;padding-top: 4.4%;">
+          <span class="text-warning me-1 d-flex" style=" padding-top: 4.8%; padding-left: 2%;;">
+            <svg viewBox="0 0 24 24" role="presentation" style="width: 0.92rem; height: 0.92rem;">
+              <path
+                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                style="fill: currentcolor;"></path>
+            </svg>
+            <svg viewBox="0 0 24 24" role="presentation" style="width: 0.92rem; height: 0.92rem;">
+              <path
+                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                style="fill: currentcolor;"></path>
+            </svg>
+            <svg viewBox="0 0 24 24" role="presentation" style="width: 0.92rem; height: 0.92rem;">
+              <path
+                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                style="fill: currentcolor;"></path>
+            </svg>
+            <svg viewBox="0 0 24 24" role="presentation" style="width: 0.92rem; height: 0.92rem;">
+              <path
+                d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                style="fill: currentcolor;"></path>
+            </svg>
+            <svg viewBox="0 0 24 24" role="presentation" style="width: 0.92rem; height: 0.92rem;">
+              <path
+                d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                style="fill: currentcolor;"></path>
+            </svg>
+          </span>
+        </div>
+        <dd style="color: white;padding-top: 4.4%;">(140)</dd>
+        <div style="padding-left: 3%;padding-top: 4.4%;">
+          <i class="fa-regular fa-bookmark text-white-50" style="margin-right:1%;"></i>
+        </div>
+        <dd style="padding-left: 1%; padding-top: 4.4%; color: white;">Advance</dd>
+      </div>
+
+      <ul style=" padding-left: 3%;background-color: white;width: 88%;margin-left:10% ;margin-top: 4.1%; " ;
+        class="nav nav-pills rounded">
+        <li class="nav-item">
+          <a class="nav-link active" href="#content" data-bs-toggle="pill" style="color: black; ">Content</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#description" data-bs-toggle="pill" style="color: black;">Description</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#reviews" data-bs-toggle="pill" style="color: black;">Reviews</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#transcript" data-bs-toggle="pill" style="color: black;">Transcript</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#faq" data-bs-toggle="pill" style="color: black;">FAQ</a>
+        </li>
+      </ul>
+
+      <div class="tab-content" style="width: 100%;">
+        <div class="tab-pane container " id="content">
+          <div id="accordion">
+            <div class="card" style="width: 90%;margin-left: 9%;">
+              <div class="card-header">
+                <a class="btn dropdown-toggle " data-bs-toggle="collapse" href="#collapseOne">
+                  <strong>Introduction to JavaScript</strong>
+                </a>
+              </div>
+              <div id="collapseOne" class="collapse " data-bs-parent="#accordion">
+                <div class="card-body">
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%;">
+                      <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                        <path d="M8,5.14V19.14L19,12.14L8,5.14Z" style="fill: currentcolor;"></path>
+                      </svg>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Introduction</dd>
+                    <div style="align-items: right;">
+                      <p>1m 7s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%;">
+                      <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                        <path d="M8,5.14V19.14L19,12.14L8,5.14Z" style="fill: currentcolor;"></path>
+                      </svg>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Installing Developement Software</dd>
+                    <div style="align-items: right;">
+                      <p>3m 11s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%;">
+                      <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                        <path d="M8,5.14V19.14L19,12.14L8,5.14Z" style="fill: currentcolor;"></path>
+                      </svg>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Hello World Project from GitHub</dd>
+                    <div style="align-items: right;">
+                      <p>2m 33s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Our Sample Project</dd>
+                    <div style="align-items: right;">
+                      <p>2m 15s</p>
+                    </div>
+                  </div>
+
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="accordion2">
+            <div class="card" style="width: 90%;margin-left: 9%;">
+              <div class="card-header">
+                <a class="btn dropdown-toggle" data-bs-toggle="collapse" href="#collapseTwo">
+                  <strong>JavaScript Beginning</strong>
+                </a>
+              </div>
+              <div id="collapseTwo" class="collapse " data-bs-parent="#accordion2">
+                <div class="card-body">
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Introduction</dd>
+                    <div style="align-items: right;">
+                      <p>1m 41s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Adding JavaScript Code to a Web Page</dd>
+                    <div style="align-items: right;">
+                      <p>3m 39s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Working with JavaScript Files</dd>
+                    <div style="align-items: right;">
+                      <p>6m 18s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Formatting Code</dd>
+                    <div style="align-items: right;">
+                      <p>2m 18s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Detecting and Fixing Erros</dd>
+                    <div style="align-items: right;">
+                      <p>3m 14s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Case Sensitivity</dd>
+                    <div style="align-items: right;">
+                      <p>1m 48s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Commenting Code</dd>
+                    <div style="align-items: right;">
+                      <p>2m 24s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Summary</dd>
+                    <div style="align-items: right;">
+                      <p>2m 14s</p>
+                    </div>
+                  </div>
+
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="accordion3">
+            <div class="card" style="width: 90%;margin-left: 9%;">
+              <div class="card-header">
+                <a class="btn dropdown-toggle" data-bs-toggle="collapse" href="#collapseThree">
+                  <strong>Variables and Constants</strong>
+                </a>
+              </div>
+              <div id="collapseThree" class="collapse " data-bs-parent="#accordion3">
+                <div class="card-body">
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Introduction</dd>
+                    <div style="align-items: right;">
+                      <p>1m 19s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">What is Variable?</dd>
+                    <div style="align-items: right;">
+                      <p>2m 34s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Declaring Variables</dd>
+                    <div style="align-items: right;">
+                      <p>2m 11s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Using let to Declare Variable</dd>
+                    <div style="align-items: right;">
+                      <p>3m 18s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Naming Variables</dd>
+                    <div style="align-items: right;">
+                      <p>3m 14s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Changing Variables Values</dd>
+                    <div style="align-items: right;">
+                      <p>2m 33s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Keywords</dd>
+                    <div style="align-items: right;">
+                      <p>2m 57s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Summary</dd>
+                    <div style="align-items: right;">
+                      <p>1m 14s</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="accordion4">
+            <div class="card" style="width: 90%;margin-left: 9%;">
+              <div class="card-header">
+                <a class="btn dropdown-toggle" data-bs-toggle="collapse" href="#collapseFour">
+                  <strong>Programm Flow</strong>
+                </a>
+              </div>
+              <div id="collapseFour" class="collapse " data-bs-parent="#accordionr">
+                <div class="card-body">
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Introduction</dd>
+                    <div style="align-items: right;">
+                      <p>3m 39s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Cliped Watched</dd>
+                    <div style="align-items: right;">
+                      <p>3m 14s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Truthy and Falsy</dd>
+                    <div style="align-items: right;">
+                      <p>3m 14s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Comparing === and ==</dd>
+                    <div style="align-items: right;">
+                      <p>2m 33s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Looping with for()</dd>
+                    <div style="align-items: right;">
+                      <p>2m 57s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Looping with do ... while()</dd>
+                    <div style="align-items: right;">
+                      <p>2m 33s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Block Scope Using let</dd>
+                    <div style="align-items: right;">
+                      <p>2m 57s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Summary</dd>
+                    <div style="align-items: right;">
+                      <p>1m 14s</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="accordion5">
+            <div class="card" style="width: 90%;margin-left: 9%;">
+              <div class="card-header">
+                <a class="btn dropdown-toggle" data-bs-toggle="collapse" href="#collapseFive">
+                  <strong>Functions</strong>
+                </a>
+              </div>
+              <div id="collapseFive" class="collapse " data-bs-parent="#accordion5">
+                <div class="card-body">
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Introduction</dd>
+                    <div style="align-items: right;">
+                      <p>3m 39s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Function Basics</dd>
+                    <div style="align-items: right;">
+                      <p>3m 14s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Passing Information to Functions</dd>
+                    <div style="align-items: right;">
+                      <p>2m 57s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Function Return Values</dd>
+                    <div style="align-items: right;">
+                      <p>2m 33s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Using Functions to Modify Web Pages</dd>
+                    <div style="align-items: right;">
+                      <p>2m 57s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Summary</dd>
+                    <div style="align-items: right;">
+                      <p>1m 14s</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="accordion6">
+            <div class="card" style="width: 90%;margin-left: 9%;">
+              <div class="card-header">
+                <a class="btn dropdown-toggle" data-bs-toggle="collapse" href="#collapseSix">
+                  <strong>Objects and the DOM</strong>
+                </a>
+              </div>
+              <div id="collapseSix" class="collapse " data-bs-parent="#accordion6">
+                <div class="card-body">
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Adding JavaScript Code to a Web Page</dd>
+                    <div style="align-items: right;">
+                      <p>3m 39s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Detecting and Fixing Erros</dd>
+                    <div style="align-items: right;">
+                      <p>3m 14s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Introduction</dd>
+                    <div style="align-items: right;">
+                      <p>3m 39s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Object Properties</dd>
+                    <div style="align-items: right;">
+                      <p>3m 14s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Passing Objects to Functions</dd>
+                    <div style="align-items: right;">
+                      <p>2m 57s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">The Document Object Model (DOM)</dd>
+                    <div style="align-items: right;">
+                      <p>2m 33s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Detecting Button Clicks</dd>
+                    <div style="align-items: right;">
+                      <p>2m 57s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Summary</dd>
+                    <div style="align-items: right;">
+                      <p>1m 14s</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="accordion7">
+            <div class="card" style="width: 90%;margin-left: 9%;">
+              <div class="card-header">
+                <a class="btn dropdown-toggle" data-bs-toggle="collapse" href="#collapseSeven">
+                  <strong>Arrays</strong>
+                </a>
+              </div>
+              <div id="collapseSeven" class="collapse " data-bs-parent="#accordion7">
+                <div class="card-body">
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Introduction</dd>
+                    <div style="align-items: right;">
+                      <p>3m 39s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Creating and Initializing Arrays</dd>
+                    <div style="align-items: right;">
+                      <p>3m 14s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Accessing Array Items</dd>
+                    <div style="align-items: right;">
+                      <p>3m 39s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Manipulating Arrays</dd>
+                    <div style="align-items: right;">
+                      <p>3m 14s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">slice() and splice()</dd>
+                    <div style="align-items: right;">
+                      <p>3m 39s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Array Searching and Looping</dd>
+                    <div style="align-items: right;">
+                      <p>3m 14s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Arrays in the DOM</dd>
+                    <div style="align-items: right;">
+                      <p>3m 39s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">DSummary</dd>
+                    <div style="align-items: right;">
+                      <p>3m 14s</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="accordion8">
+            <div class="card" style="width: 90%;margin-left: 9%;">
+              <div class="card-header">
+                <a class="btn dropdown-toggle" data-bs-toggle="collapse" href="#collapseEight">
+                  <strong>Scope and Hoisting</strong>
+                </a>
+              </div>
+              <div id="collapseEight" class="collapse " data-bs-parent="#accordion8">
+                <div class="card-body">
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Introduction</dd>
+                    <div style="align-items: right;">
+                      <p>3m 39s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Function Scope</dd>
+                    <div style="align-items: right;">
+                      <p>3m 14s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Var and Hoisting</dd>
+                    <div style="align-items: right;">
+                      <p>3m 14s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Undeclared Variables and Strict Mode</dd>
+                    <div style="align-items: right;">
+                      <p>3m 39s</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex width: 100%">
+                    <div style="width: 2%; padding-left: 0.2%;">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <dd style="padding-left: 1%; width: 90%;">Summary</dd>
+                    <div style="align-items: right;">
+                      <p>3m 14s</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="accordion9">
+            <div class="card" style="width: 90%;margin-left: 9%;">
+              <div class="card-header">
+                <a class="btn dropdown-toggle" data-bs-toggle="collapse" href="#collapseNine">
+                  <strong>Summary</strong>
+                </a>
+              </div>
+              <div id="collapseNine" class="collapse " data-bs-parent="#accordion9">
+                <div class="card-body">
+
+                  <p style="color: grey;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse
+                    velit eos sunt ab inventore est tenetur blanditiis? Voluptas eius molestiae ad itaque tempora nobis
+                    minima eveniet aperiam molestias, maiores natus expedita dolores ea non possimus magnam corrupt i
+                    quas rem unde quo enim porro culpa! Quaerat veritatis veniam corrupti iusto.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div style="background-color: white; margin-left: 10%;width: 88%;border: 1px solid gray;"
+          class="tab-pane container rounded" id="description">
+          <h3 style="margin-top: 3%;">Course Description</h3>
+          <p style="color: grey;">If you’re learning to program for the first time, or if you’re coming from a different
+            language, this
+            course, JavaScript: Getting Started, will give you the basics for coding in JavaScript. First, you'll
+            discover the types of applications that can be built with JavaScript, and the platforms they’ll run on.</p>
+          <p style="color: grey;">Next, you’ll explore the basics of the language, giving plenty of examples. Lastly,
+            you’ll put your
+            JavaScript knowledge to work and modify a modern, responsive web page. When you’re finished with this
+            course, you’ll have the skills and knowledge in JavaScript to create simple programs, create simple web
+            applications, and modify web pages.</p>
+          <h4>What you'll learn</h4>
+          <div class="row">
+            <div class="col sm-6">
+
+              <div class="d-flex">
+                <i class="far fa-check-circle text-success me-2 mt-2"></i>
+                <p style="color: grey;">Recognize the importance of understanding your objectives when addressing an
+                  audience.</p>
+              </div>
+              <div class="d-flex">
+                <i class="far fa-check-circle text-success me-2 mt-2"></i>
+                <p style="color: grey;">Identify the fundaments of composing a successful close</p>
+              </div>
+              <div class="d-flex">
+                <i class="far fa-check-circle text-success me-2 mt-2"></i>
+                <p style="color: grey;">Explore how to connect with your audience through crafting compelling stories.
+                </p>
+              </div>
+
+            </div>
+
+            <div class="col sm-6">
+
+              <div class="d-flex">
+                <i class="far fa-check-circle text-success me-2 mt-2"></i>
+                <p style="color: grey;">Examine ways to connect with your audience by personalizing your content.</p>
+              </div>
+              <div class="d-flex">
+                <i class="far fa-check-circle text-success me-2 mt-2"></i>
+                <p style="color: grey;">Break down the best ways to exude executive presence.</p>
+              </div>
+              <div class="d-flex">
+                <i class="far fa-check-circle text-success me-2 mt-2"></i>
+                <p style="color: grey;">Explore how to communicate the unknown in an impromptu communication.</p>
+              </div>
+
+            </div>
+          </div>
+          <p style="color: grey;">Maecenas viverra condimentum nulla molestie condimentum. Nunc ex libero, feugiat quis
+            lectus vel, ornare euismod ligula. Aenean sit amet arcu nulla.</p>
+          <p style="color: grey;">Duis facilisis ex a urna blandit ultricies. Nullam sagittis ligula non eros semper,
+            nec mattis odio ullamcorper. Phasellus feugiat sit amet leo eget consectetur.</p>
+        </div>
+
+
+        <div style="background-color: white; margin-left: 10%;width: 88%;border: 1px solid gray;"
+          class="tab-pane container " id="reviews">
+          <div>
+            <h4 style="margin-top: 4%;margin-left: 3%;margin-bottom: 3%;">How students rated this courses</h4>
+            <div class="d-flex">
+              <div style="padding-left: 3%;">
+                <h1 style="padding-left: 20%;size: 60px;">4.5</h1>
+                <span class="text-warning me-1 d-flex" style=" padding-top: 4.8%;padding-left: 18%; ">
+                  <svg viewBox="0 0 24 24" role="presentation" style="width: 0.92rem; height: 0.92rem;">
+                    <path
+                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                      style="fill: currentcolor;"></path>
+                  </svg>
+                  <svg viewBox="0 0 24 24" role="presentation" style="width: 0.92rem; height: 0.92rem;">
+                    <path
+                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                      style="fill: currentcolor;"></path>
+                  </svg>
+                  <svg viewBox="0 0 24 24" role="presentation" style="width: 0.92rem; height: 0.92rem;">
+                    <path
+                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                      style="fill: currentcolor;"></path>
+                  </svg>
+                  <svg viewBox="0 0 24 24" role="presentation" style="width: 0.92rem; height: 0.92rem;">
+                    <path
+                      d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                      style="fill: currentcolor;"></path>
+                  </svg>
+                  <svg viewBox="0 0 24 24" role="presentation" style="width: 0.92rem; height: 0.92rem;">
+                    <path
+                      d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                      style="fill: currentcolor;"></path>
+                  </svg>
+                </span>
+                <p style="font-size: smaller;color: grey;">(Based on 27 reviews)</p>
+              </div>
+
+              <div class="progress" style="border: 20px solid rgb(0, 255, 140); width: 65%; ">
+                <div class="progress-bar bg-warning" style="width:14%;border: 2px solid blue;"></div><br>
+                <div class="progress-bar bg-warning" style="width:14%"></div><br>
+                <div class="progress-bar bg-warning" style="width:14%"></div><br>
+
+
+              </div>
+
+              <div class="rating-percentage ">
+                <div class="d-flex">
+                  <span class="text-warning me-1 d-flex" style=" padding-top: 4.8%; ">
+                    <svg viewBox="0 0 24 24" role="presentation" style="width: 0.92rem; height: 0.92rem;">
+                      <path
+                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                        style="fill: currentcolor;"></path>
+                    </svg>
+                    <svg viewBox="0 0 24 24" role="presentation" style="width: 0.92rem; height: 0.92rem;">
+                      <path
+                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                        style="fill: currentcolor;"></path>
+                    </svg>
+                    <svg viewBox="0 0 24 24" role="presentation" style="width: 0.92rem; height: 0.92rem;">
+                      <path
+                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                        style="fill: currentcolor;"></path>
+                    </svg>
+                    <svg viewBox="0 0 24 24" role="presentation" style="width: 0.92rem; height: 0.92rem;">
+                      <path
+                        d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                        style="fill: currentcolor;"></path>
+                    </svg>
+                    <svg viewBox="0 0 24 24" role="presentation" style="width: 0.92rem; height: 0.92rem;">
+                      <path
+                        d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                        style="fill: currentcolor;"></path>
+                    </svg>
+                  </span>
+                  <p>50%</p>
+                </div>
+                <div class="d-flex">
+                  <span class="text-warning me-1 d-flex" style=" padding-top: 4.8%; ">
+                    <svg viewBox="0 0 24 24" role="presentation" style="width: 0.92rem; height: 0.92rem;">
+                      <path
+                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                        style="fill: currentcolor;"></path>
+                    </svg>
+                    <svg viewBox="0 0 24 24" role="presentation" style="width: 0.92rem; height: 0.92rem;">
+                      <path
+                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                        style="fill: currentcolor;"></path>
+                    </svg>
+                    <svg viewBox="0 0 24 24" role="presentation" style="width: 0.92rem; height: 0.92rem;">
+                      <path
+                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                        style="fill: currentcolor;"></path>
+                    </svg>
+                    <svg viewBox="0 0 24 24" role="presentation" style="width: 0.92rem; height: 0.92rem;">
+                      <path
+                        d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                        style="fill: currentcolor;"></path>
+                    </svg>
+                    <svg viewBox="0 0 24 24" role="presentation" style="width: 0.92rem; height: 0.92rem;">
+                      <path
+                        d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                        style="fill: currentcolor;"></path>
+                    </svg>
+                  </span>
+                  <p>36%</p>
+                </div>
+                <div class="d-flex">
+                  <span class="text-warning me-1 d-flex" style=" padding-top: 4.8%; ">
+                    <svg viewBox="0 0 24 24" role="presentation" style="width: 0.92rem; height: 0.92rem;">
+                      <path
+                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                        style="fill: currentcolor;"></path>
+                    </svg>
+                    <svg viewBox="0 0 24 24" role="presentation" style="width: 0.92rem; height: 0.92rem;">
+                      <path
+                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                        style="fill: currentcolor;"></path>
+                    </svg>
+                    <svg viewBox="0 0 24 24" role="presentation" style="width: 0.92rem; height: 0.92rem;">
+                      <path
+                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                        style="fill: currentcolor;"></path>
+                    </svg>
+                    <svg viewBox="0 0 24 24" role="presentation" style="width: 0.92rem; height: 0.92rem;">
+                      <path
+                        d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                        style="fill: currentcolor;"></path>
+                    </svg>
+                    <svg viewBox="0 0 24 24" role="presentation" style="width: 0.92rem; height: 0.92rem;">
+                      <path
+                        d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                        style="fill: currentcolor;"></path>
+                    </svg>
+                  </span>
+                  <p>23%</p>
+                </div>
+              </div>
+
+            </div>
+            <hr>
+
+            <div>
+              <div class="d-flex">
+                <h1 style="font-size: larger;margin-left: 4%; ;">Review</h1>
+                <form style="margin-left: auto;"><input class="form" type="search" placeholder="search"></form>
+              </div>
+
+              <div style="margin-left: 4%;margin-top: 2% ;" class="d-flex">
+                <img style=" width: 8%;height: 4%"
+                  src="https://geeks-react.netlify.app/static/media/avatar-2.397cdd4b772a83b9166e.jpg" alt=""
+                  class="rounded-circle avatar-lg">
+                <div>
+                  <div class="d-flex" style="margin-top: 3%; ">
+                    <h5>Max Hawkins</h5>
+                    <p style="color: grey;margin-left: 3%;">2 days ago</p>
+                  </div>
+                  <div class="fs-6 mb-2 text-warning"><svg viewBox="0 0 24 24" role="presentation"
+                      style="width: 0.875rem; height: 0.875rem;">
+                      <path
+                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                        style="fill: currentcolor;"></path>
+                    </svg><svg viewBox="0 0 24 24" role="presentation" style="width: 0.875rem; height: 0.875rem;">
+                      <path
+                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                        style="fill: currentcolor;"></path>
+                    </svg><svg viewBox="0 0 24 24" role="presentation" style="width: 0.875rem; height: 0.875rem;">
+                      <path
+                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                        style="fill: currentcolor;"></path>
+                    </svg><svg viewBox="0 0 24 24" role="presentation" style="width: 0.875rem; height: 0.875rem;">
+                      <path
+                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                        style="fill: currentcolor;"></path>
+                    </svg><svg viewBox="0 0 24 24" role="presentation" style="width: 0.875rem; height: 0.875rem;">
+                      <path
+                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                        style="fill: currentcolor;"></path>
+                    </svg>
+                  </div>
+                  <p>Lectures were at a really good pace and I never felt lost.</p>
+                  <p>Was this review helpful</p>
+                  <div style="margin-bottom: 3%;">
+                    <button style="background-color: #754FFE;color: whote;" class="btn">Yes</button>
+                    <button style="color: black; background-color: white; border-color:white ;" class="btn">No</button>
+                  </div>
+                  <hr>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane container " id="transcript"
+          style="background-color: white; margin-left: 10%;width: 88%;border: 1px solid gray;">
+          <h4 style="margin-top: 3%;">Transcript from the "Introduction" Lesson</h4>
+          <h4 style="font-size: large;margin-top: 3%;">Course Overview <a class="text-primary">[00:00:00]</a></h4>
+          <p style="font-size: medium;color: grey;">My name is John Deo and I work as human duct tape at Gatsby, that
+            means that I do a lot of different things. Everything from dev roll to writing content to writing code. And
+            I used to work as an architect at IBM. I live in Portland, Oregon.</p>
+
+          <h4 style="font-size: large;margin-top: 3%;">Introduction <a class="text-primary">[00:00:16]</a></h4>
+          <p style="font-size: medium;color: grey;">We'll dive into GraphQL, the fundamentals of GraphQL. We're only
+            gonna use the pieces of it that we need to build in Gatsby. We're not gonna be doing a deep dive into what
+            GraphQL is or the language specifics. We're also gonna get into MDX. MDX is a way to write React components
+            in your markdown.</p>
+
+          <h4 style="font-size: large;margin-top: 3%;">Why Take This Course? <a class="text-primary">[00:00:37]</a></h4>
+          <p style="font-size: medium;color: grey;">We'll dive into GraphQL, the fundamentals of GraphQL. We're only
+            gonna use the pieces of it that we need to build in Gatsby. We're not gonna be doing a deep dive into what
+            GraphQL is or the language specifics. We're also gonna get into MDX. MDX is a way to write React components
+            in your markdown.</p>
+
+          <h4 style="font-size: large;margin-top: 3%;">A Look at the Demo Application <a
+              class="text-primary">[00:00:54]</a></h4>
+          <p style="font-size: medium;color: grey;">We'll dive into GraphQL, the fundamentals of GraphQL. We're only
+            gonna use the pieces of it that we need to build in Gatsby. We're not gonna be doing a deep dive into what
+            GraphQL is or the language specifics. We're also gonna get into MDX. MDX is a way to write React components
+            in your markdown</p>
+          <p style="font-size: medium;color: grey;">We'll dive into GraphQL, the fundamentals of GraphQL. We're only
+            gonna use the pieces of it that we need to build in Gatsby. We're not gonna be doing a deep dive into what
+            GraphQL is or the language specifics. We're also gonna get into MDX. MDX is a way to write React components
+            in your markdown.</p>
+
+          <h4 style="font-size: large;margin-top: 3%;">Summary <a class="text-primary">[00:00:54]</a></h4>
+          <p style="font-size:medium;color: grey;">We'll dive into GraphQL, the fundamentals of GraphQL. We're only
+            gonna use the pieces of it that we need to build in Gatsby. We're not gonna be doing a deep dive into what
+            GraphQL is or the language specifics. We're also gonna get into MDX. MDX is a way to write React components
+            in your markdown</p>
+        </div>
+        <div class="tab-pane container rounded" id="faq"
+          style="background-color: white; margin-left: 10%;width: 88%;border: 1px solid gray; padding-left: 2%;">
+          <h4 style="margin-top: 3%;font-size: larger;">Course - Frequently Asked Questions</h4>
+          <h4 style="font-size: large;margin-top: 3%;">How this course help me to design layout? </h4>
+          <p style="font-size: medium;color:grey">My name is Jason Woo and I work as human duct tape at Gatsby, that
+            means that I do a lot of different things. Everything from dev roll to writing content to writing code. And
+            I used to work as an architect at IBM. I live in Portland, Oregon.</p>
+
+          <h4 style="font-size: large;margin-top: 3%;">What is important of this course? </h4>
+          <p style="font-size: medium;color: grey;">We'll dive into GraphQL, the fundamentals of GraphQL. We're only
+            gonna use the pieces of it that we need to build in Gatsby. We're not gonna be doing a deep dive into what
+            GraphQL is or the language specifics. We're also gonna get into MDX. MDX is a way to write React components
+            in your markdown.</p>
+
+          <h4 style="font-size: large;margin-top: 3%;">Why Take This Course? </h4>
+          <p style="font-size: medium;color: grey;">We'll dive into GraphQL, the fundamentals of GraphQL. We're only
+            gonna use the pieces of it that we need to build in Gatsby. We're not gonna be doing a deep dive into what
+            GraphQL is or the language specifics. We're also gonna get into MDX. MDX is a way to write React components
+            in your markdown.</p>
+
+          <h4 style="font-size: large;margin-top: 3%;">Is able to create application after this course?</h4>
+          <p style="font-size: medium;color: grey;">We'll dive into GraphQL, the fundamentals of GraphQL. We're only
+            gonna use the pieces of it that we need to build in Gatsby. We're not gonna be doing a deep dive into what
+            GraphQL is or the language specifics. We're also gonna get into MDX. MDX is a way to write React components
+            in your markdown.</p>
+          <p style="font-size: medium;color: grey;">We'll dive into GraphQL, the fundamentals of GraphQL. We're only
+            gonna use the pieces of it that we need to build in Gatsby. We're not gonna be doing a deep dive into what
+            GraphQL is or the language specifics. We're also gonna get into MDX. MDX is a way to write React components
+            in your markdown.</p>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-4">
+      <div style="padding-top: 32%;width: 90%;">
+        <div class="card">
+          <img src="javascript.jpg" style="width: 100%; padding: 1%;">
+
+          <p style="padding-left:8%; font-size: x-large;"><b>$600</b><sub><del>$750</del></sub></p>
+
+          <button style="margin: 0 6%; background-color: #754FFE;" class="btn ">Start Free Month</button>
+          <button style="margin: 2% 6%; border-color: #754FFE;" class="btn ">Get Full Access</button>
+
+        </div>
+      </div>
+
+      <div style="width: 90%; height:18%;  margin-top: 4%;">
+        <div class="card">
+          <h6 style="padding-left: 6%;margin-top: 4%; ">What's included</h6>
+          <hr>
+
+          <div class="d-flex" style="padding-left: 6%;">
+            <i  class="fa-duotone fa-play"></i>
+            <p style="padding-left: 4%;">12 hours video</p>
+
+          </div>
+          <hr>
+
+          <div class="d-flex" style="padding-left: 6%;">
+            <i class="fa-duotone fa-play"></i>
+            <p style="padding-left: 4%;">Certificate</p>
+
+          </div>
+          <hr>
+
+
+          <div class="d-flex" style="padding-left: 6%;">
+            <i class="fa-duotone fa-play"></i>
+            <p style="padding-left: 4%;">12 Article</p>
+          </div>
+          <hr>
+
+
+          <div class="d-flex" style="padding-left: 6%;">
+            <i class="fa-duotone fa-play"></i>
+            <p style="padding-left: 4%;">Watch Offline</p>
+          </div>
+          <hr>
+
+          <div class="d-flex" style="padding-left: 6%;">
+            <i class="fa-duotone fa-play"></i>
+            <p style="padding-left: 4%;">Lifetime access</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="width: 90%;   margin-top: 33%;">
+        <div class="card">
+          <div class="d-flex">
+            <img style="width: 30%; margin-left: 4%;margin-top: 4%;" class="rounded-circle" src="Avatar.jpg" alt="">
+            <div style="margin-top:6% ; margin-left: 3%;">
+              <h5>Jenny William</h5>
+              <p style="font-size: smaller;">Front-end Developer, Designer</p>
+              <div class="d-flex">
+                <p style="color: chocolate;">4.5</p>
+                <p style="margin-left: 3%;">Instructor Rating</p>
+              </div>
+            </div>
+          </div>
+          <div class=" row d-flex row-with-lines" style="margin-top: 4%;">
+            <div class="col-md-4" style="padding-left: 10%;">
+              <dt>11,604</dt>
+              <p>Sturdents</p>
+
+            </div>
+
+            <div class="col-md-4" style="padding-left: 10%;border-left: 1px solid gray">
+              <dt>32</dt>
+              <p>Corsues</p>
+
+            </div>
+            <div class="col-md-4" style="padding-left: 10%;border-left: 1px solid gray;">
+              <dt>12,230</dt>
+              <p>Reviews</p>
+            </div>
+
+          </div>
+          <p style="margin-left:2% ; padding:0 2%;">I am an Innovation designer focussing on UX/UI based in Berlin. As a
+            creative resident at Figma explored the city of the future and how new technologies.</p>
+          <button class="btn"
+            style="margin-bottom: 5%; width: 30%;margin-left: 6%;border: 1px solid black; color: grey;font-size: smaller;">View
+            Detials</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- <footer class="bg-light py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 d-flex justify-content-center justify-content-md-start align-items-center mb-3 mb-md-0">
+                <dd class="mb-0">@ 2024 Geeks. All Rights Reserved.</dd>
+            </div>
+            <div class="col-sm-12 col-md-8 d-flex justify-content-center justify-content-md-end flex-wrap">
+                <a class="footer-link" href="#">Privacy</a>
+                <a style="padding-left: 4%;" class="footer-link" href="#">Terms</a>
+                <a style="padding-left: 4%;" class="footer-link" href="#">Feedback</a>
+                <a style="padding-left: 4%;" class="footer-link" href="#">Support</a>
+            </div>
+        </div>
+    </div>
+  </footer> -->
+
+</body>
+
+</html>
