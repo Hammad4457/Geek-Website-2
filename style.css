@@ -1,3 +1,34 @@
+.icon-button {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.popover {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1;
+  top: calc(100% + 5px);
+  /* Position the popover below the button */
+  left: 92%;
+  transform: translateX(-50%);
+  /* Center the popover horizontally */
+}
+
+.icon-button:hover + .popover {
+  display: block;
+}
+
+.popover:hover {
+  display: block;
+  /* Keep popover visible when hovering over it */
+}
+
 .navbar-left {
   display: flex;
   justify-content: right;
@@ -27,7 +58,8 @@
   width: 94%;
 
   height: 1px;
-  background: gray; /* Horizontal lines */
+  background: gray;
+  /* Horizontal lines */
 }
 
 .row-with-lines::before {
@@ -36,11 +68,96 @@
   left: 0;
   width: 100%;
   height: 1px;
-  background: gray; /* Horizontal lines */
+  background: gray;
+  /* Horizontal lines */
 }
 
-.no-btn:hover {
-  border-color: white;
+.footer a:hover {
+  color: rgb(89, 112, 244);
+}
+
+.nav-item a {
+  color: black;
+}
+
+.nav-link:hover,
+.nav-item a:focus {
+  color: blue;
+}
+
+.footer-link {
+  color: black;
   text-decoration: none;
-  background-color: aqua;
+}
+
+.footer-link hover {
+  color: blue;
+}
+
+.course-details-cards p {
+  color: #6544dc;
+
+  font-family: Arial, sans-serif;
+}
+
+.header1 {
+  padding-top: 4%;
+  padding-left: 11%;
+  color: white;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+.para1 {
+  padding-left: 11%;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.items {
+  padding-top: 4.4%;
+  padding-left: 3%;
+}
+
+.bookmark-1 {
+  padding-left: 11%;
+  color: white;
+  margin-top: 5%;
+}
+
+.unlist-items {
+  border: 1px;
+  padding-left: 3%;
+  background-color: white;
+  box-shadow: 1px 1px gray;
+  width: 90%;
+  margin-left: 6%;
+  margin-top: 4.1%;
+  width: 90%;
+}
+
+@media screen and (max-width: 560px) {
+  .header1 {
+    padding-top: 8%;
+    padding-left: 2%;
+    color: white;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+  }
+
+  .para1 {
+    font-size: 20px;
+    padding-left: 2%;
+
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .unlist-items {
+    margin-left: 2%;
+    width: 100%;
+  }
 }
